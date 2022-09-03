@@ -1,0 +1,241 @@
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  border-radius: 16px;
+}
+
+
+
+/* Top left text */
+.top-centered {
+  position: absolute;
+  top: 8px;
+  left: 29%;
+}
+
+li{
+  list-style: none;
+}
+
+ul{
+  display:flex;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  background-color: white;
+  padding: 6px;
+  border-radius: 4px;
+  width: 350px;
+  color: black;
+  opacity: 0.85;
+
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper-useful{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  font-size: x-large;
+}
+
+.wrapper-mode-control{
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  font-size: x-large;
+}
+
+.wrapper-mode-control button{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 110px;
+  margin-top: 10px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  background-color: white;
+  padding: 6px;
+  border-radius: 4px;
+  width: 208px;
+  opacity: 0.85;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+.li{
+  margin: 0 15px;
+  font-weight: bold;
+
+}
+
+.video-feed{
+
+  border-radius: 16px;
+
+
+}
+.top-right img {
+  height: 32px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  background-color: white;
+  width: 400px;
+  height: 80px;
+  color: black;
+  overflow-y: auto;
+  line-height: 10px;
+  text-align: left;
+  padding-top: 7px;
+  opacity: 0.8;
+  padding: 6px;
+}
+
+/* Centered text */
+.centered-right {
+  position: absolute;
+  font-family: sans-serif;
+  top: 50%;
+  left: 97%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 50px;
+  height: 150px;
+  padding-top: 0px;
+  border-radius: 24px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.count{
+  font-size: x-large;
+}
+
+.hdop{
+  font-size: x-small;
+}
+
+.button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.wrapper-telemetry {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  font-size: xxx-large;
+  justify-content: center;
+  top: 8px;
+  right: 50%;
+  height: 40px;
+  width: 500px;
+  background-color: white;
+  opacity:0.85;
+  color: black;
+  border-radius: 7px 7px 7px 7px;
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper-telemetry > * {
+  
+  text-transform: capitalize;
+  font-weight: 300;
+  align-items: center;
+  align-content: center;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+#map { 
+height: 800px; 
+z-index:0;
+width: 100%;
+
+
+}
+
+
+.buttons {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 4px;
+  position: relative;
+  background-color: #16a085;
+  border: none;
+  color: #fff;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 4px;
+}
+
+.buttons:hover {
+  background: #fff;
+  box-shadow: 0px 2px 10px 5px #1abc9c;
+  color: #000;
+}
+
+.buttons:after {
+  content: "";
+  background: #1abc9c;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.buttons:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.buttons:focus { outline:0; }

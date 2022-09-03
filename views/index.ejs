@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <script src="https://kit.fontawesome.com/2c3cabf684.js" crossorigin="anonymous"></script>
+  
+   <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
+   
+   <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script src="emit.js"></script>
+    <title>Cos enhanced</title>
+
+</head>
+<body>
+
+	<div class="container">
+		<script> var exports = {}; </script>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js"></script>
+		<script src="https://unpkg.com/leaflet-drift-marker@2.0.0/lib/index.js"></script>
+		<script src="rotatedmarker.js"></script>
+		<div id='map'></div>
+	  	<script src="map.js"></script>
+
+		
+		<div class="bottom-left">
+			<img class="video-feed" src="stream.mjpg">
+		</div>
+		
+		
+		<div class="top-right">
+			<div class="wrapper-useful">
+				<img class="sat" src="altitude.png">
+				<div id="altitude"></div>
+				<img class="bat" src="battery.png">
+				<div id="battery"></div>
+				<img class="sat" src="satellite.svg">
+				<div class="gps">
+					<div class="count" id="gps count"></div>
+					<div class="hdop" id="Hdop"></div>
+				</div>
+				<img class="speed" src="speed.png">
+				<div id="airspeed"></div>
+			</div>
+			<div class="wrapper-mode-control">
+				<button class="buttons" onclick="myAUTO()">AUTO</button>
+				<button class="buttons" onclick="myLOITER()">LOITER</button>
+				<button class="buttons" onclick="myGUIDED()">GUIDED</button>
+			</div>
+
+		</div>
+	  
+		
+		<div class="top-left">
+			<img src="logo_ali.png" alt="Logo A.L.I.">
+		</div>
+
+		
+		<div class="top-centered">
+			<div class="wrapper-telemetry">
+				<div id="mode"></div>
+			</div>
+		</div>
+
+		<div class="bottom-right">
+			<div id="logging"></div>
+		</div>
+
+		<div class="centered-right">
+			<button class="button" onclick="myTAKEOFF()"><img src="takeoff.svg" alt="takeoff"></button>
+			<button class="button" onclick="myRtl()"><img src="home.svg" alt="home"></button>
+		</div>
+
+	</div>
+
+
+    
+    
+</body>
+</html>

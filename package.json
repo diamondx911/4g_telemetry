@@ -1,0 +1,41 @@
+{
+  "name": "raspberrypi-node-camera-web-streamer",
+  "version": "1.1.2",
+  "description": "HTTP video streamer for raspberrypi.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caseymcj/raspberrypi_node_camera_web_streamer.git"
+  },
+  "keywords": [
+    "raspberry",
+    "pi",
+    "node",
+    "camera",
+    "html",
+    "web",
+    "stream",
+    "live"
+  ],
+  "author": "Casey Johnson",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.8",
+    "express": "^4.17.1",
+    "leaflet-drift-marker": "^2.0.0",
+    "leaflet-rotatedmarker": "^0.2.0",
+    "nodemon": "^2.0.19",
+    "progressbar.js": "^1.1.0",
+    "raspberry-pi-camera-native": "0.0.0",
+    "socket.io": "^4.5.1",
+    "socketio": "^1.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/caseymcj/raspberrypi_node_camera_web_streamer/issues"
+  },
+  "homepage": "https://github.com/caseymcj/raspberrypi_node_camera_web_streamer#readme"
+}
